@@ -14,6 +14,8 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        // 未認証環境のテスト実行では / はログインへリダイレクトされる想定
+        $response->assertStatus(302);
+        $response->assertRedirect(route('login'));
     }
 }
