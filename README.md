@@ -55,7 +55,7 @@ php artisan serve
 ## サンプルアカウント
 （デフォルトで seed が用意されている場合）
 - 管理者: admin@example.com / password
-- ユーザ: user@example.com / password
+- ユーザ: sample1@example.com / password
 
 ※ もしシーダがない場合は、`php artisan tinker` で手動作成してください。
 
@@ -75,28 +75,6 @@ php artisan test
 ## よくある問題と対処
 - 「Trait Tests\\CreatesApplication not found」などのエラーが出る場合は、`tests/CreatesApplication.php` が存在することを確認してください（このリポジトリでは追加済み）。
 - 依存関係エラーは `composer install` を再実行してキャッシュをクリアしてください。
-
----
-
-## セキュリティ上の注意（面接でのアピールポイント）
-- パスワードは `Hash::make()` で保存しています。モデルの `$casts` と `$fillable` を見直し、マスアサインメントを最小化してあります。
-- しかし、本番公開前には更に依存ライブラリの脆弱性スキャンとロギング、レート制限（ログイン）を追加することを推奨します。
-
----
-
-## 追加で私が入れた修正一覧（面接で説明できる変更）
-- `User` モデルの `$casts` を正しく修正（`password` のハッシュと `email_verified_at` の cast）
-- `Payslip` モデルの relation を `user_id` ベースに統一
-- テスト用の `CreatesApplication` トレイトを追加し、テストを通るよう修正
-- `Authenticate` ミドルウェアの admin 判定を堅牢化
-
----
-
-## 次の改善候補（履歴書で触れるとよい）
-- CI の追加（GitHub Actions で tests + pint を実行）
-- Docker compose でワンコマンド起動
-- 主要ロジックのサービス化と単体テストの強化
-
 ---
 
 ## Screenshots
