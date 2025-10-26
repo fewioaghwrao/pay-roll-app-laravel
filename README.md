@@ -77,6 +77,30 @@ php artisan test
 - 依存関係エラーは `composer install` を再実行してキャッシュをクリアしてください。
 ---
 
+## アーキテクチャ概要
+
+このアプリケーションの全体構成とデータ設計は以下の通りです。
+
+### ER 図
+<p align="center">
+  <img src="docs/diagrams/ER.png" alt="ER Diagram" width="900">
+</p>
+ER 図は、給与明細（payslips）、ユーザー（users）、源泉徴収票（withholding_statements）などの関連を示しています。
+
+### 状態遷移図（管理者側）
+<p align="center">
+  <img src="docs/diagrams/State_Transition_Diagram_admin.png" alt="Admin State Transition Diagram" width="900">
+</p>
+管理者は「ログイン → 社員一覧閲覧 → 明細作成 → PDF 出力」などのフローを持ちます。
+
+### 状態遷移図（社員側）
+<p align="center">
+  <img src="docs/diagrams/State_Transition_Diagram_user.png" alt="User State Transition Diagram" width="900">
+</p>
+社員ユーザーは「ログイン → 明細確認 → PDF ダウンロード」などのシンプルなフローです。
+
+---
+
 ## Screenshots
 
 以下はアプリケーションのスクリーンショット例です。<br>
