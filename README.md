@@ -54,8 +54,8 @@ php artisan serve
 
 ## サンプルアカウント
 （デフォルトで seed が用意されている場合）
-- 管理者: admin@example.com / password
-- ユーザ: sample1@example.com / password
+- 管理者: admin@example.com / password / ログインアドレス:/admin/login
+- ユーザ: sample4@example.com / password / ログインアドレス:/login
 
 ※ もしシーダがない場合は、`php artisan tinker` で手動作成してください。
 
@@ -80,15 +80,15 @@ php artisan test
 ## Screenshots
 
 以下はアプリケーションのスクリーンショット例です。
-
+給与リスト画面
 <p align="center">
 	<img src="docs/screenshots/readme1.png" alt="User payslips list"  width="900" />
 </p>
-
+管理者用社員リスト画面
 <p align="center">
 	<img src="docs/screenshots/readme2.png" alt="Admin user list"  width="900" />
 </p>
-
+管理者用社員詳細画面
 <p align="center">
 	<img src="docs/screenshots/readme3.png" alt="Payslip chart"  width="900" />
 </p>
