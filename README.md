@@ -73,7 +73,7 @@ php artisan test
 ---
 
 ## よくある問題と対処
-- 「Trait Tests\\CreatesApplication not found」などのエラーが出る場合は、`tests/CreatesApplication.php` が存在することを確認してください（このリポジトリでは追加済み）。
+- 「Trait Tests\\CreatesApplication not found」などのエラーが出る場合は、`tests/CreatesApplication.php` が存在することを確認してください。
 - 依存関係エラーは `composer install` を再実行してキャッシュをクリアしてください。
 ---
 
