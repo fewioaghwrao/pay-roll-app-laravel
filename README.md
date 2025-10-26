@@ -82,15 +82,15 @@ php artisan test
 以下はアプリケーションのスクリーンショット例です。
 
 <p align="center">
-	<img src="docs/screenshots/screenshot-1.png" alt="User payslips list"  width="900" />
+	<img src="docs/screenshots/readme1.png" alt="User payslips list"  width="900" />
 </p>
 
 <p align="center">
-	<img src="docs/screenshots/screenshot-2.png" alt="Admin user list"  width="900" />
+	<img src="docs/screenshots/readme2.png" alt="Admin user list"  width="900" />
 </p>
 
 <p align="center">
-	<img src="docs/screenshots/screenshot-3.png" alt="Payslip chart"  width="900" />
+	<img src="docs/screenshots/readme3.png" alt="Payslip chart"  width="900" />
 </p>
 
 ---
