@@ -79,7 +79,7 @@ php artisan test
 
 ## Screenshots
 
-以下はアプリケーションのスクリーンショット例です。
+以下はアプリケーションのスクリーンショット例です。<br>
 給与リスト画面
 <p align="center">
 	<img src="docs/screenshots/readme1.png" alt="User payslips list"  width="900" />
