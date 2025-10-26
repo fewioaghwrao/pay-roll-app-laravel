@@ -83,7 +83,7 @@ php artisan test
 
 ### ER 図
 <p align="center">
-  <img src="docs/diagrams/ER.png" alt="ER Diagram" width="900">
+  <img src="docs/diagrams/ER.png" alt="ER Diagram" width="500">
 </p>
 ER 図は、給与明細（payslips）、ユーザー（users）、源泉徴収票（withholding_statements）などの関連を示しています。
 
