@@ -53,10 +53,10 @@ php artisan serve
 ---
 
 ## サンプルアカウント
-（デフォルトで seed が用意されている場合）
-- 管理者: admin@example.com / password / ログインアドレス:/admin/login
-- ユーザ: sample4@example.com / password / ログインアドレス:/login
-
+- 管理者: ID：admin@example.com / パスワード：password
+- https://payroll-app-2025-naoki-575b955f1d74.herokuapp.com/admin/login
+- ユーザ: ID：sample4@example.com / パスワード：password
+- https://payroll-app-2025-naoki-575b955f1d74.herokuapp.com/login
 ※ もしシーダがない場合は、`php artisan tinker` で手動作成してください。
 
 ---
